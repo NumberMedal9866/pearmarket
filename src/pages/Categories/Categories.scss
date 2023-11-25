@@ -1,0 +1,27 @@
+.btn{
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    &-holder{
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        @include media (840){
+          margin: 20px auto;
+          justify-content: space-between;
+        }
+    }
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

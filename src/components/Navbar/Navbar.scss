@@ -1,0 +1,51 @@
+.nav{
+    // width: 100%;
+    background: white;
+    padding: 10px 30px;
+    @include media (550){
+        padding: 10px 50px;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    @include media (400){
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    @include media (330){
+        padding: 10px;
+        font-size: 13px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        gap: 40px;
+        a{
+            font-family: I5;
+            font-weight: 500;
+            color: black;
+        }
+
+    }
+    img{
+        width: 30px;
+        @include media (550){
+            width: 23px;
+        }
+    }
+}
+.cart-info{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    p{
+        @include media (550){
+            font-size: 16px;
+        }
+        font-size: 20px;
+        font-family: I5;
+        color: #000;
+    }
+}

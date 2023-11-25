@@ -1,0 +1,107 @@
+.cart{
+    &-item{
+        display: flex;
+        align-items: flex-end;
+    }
+    position: relative;
+    &-holder{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 0 0 0 20px;
+        width: 100%;
+        @include media (960){
+            margin-bottom: 170px;
+        }
+    }
+    h2{
+        font-family: I7;
+        font-size: 50px;
+        margin: 50px 0 20px;
+    }
+    &-card{
+        overflow: hidden;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+
+        img{
+            border-radius: 0 15px 15px 0;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+            p{
+
+                font-family: I7;
+            }
+            &-discount{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-top: 10px;
+                p{
+                    text-decoration: line-through;
+                    color: gray;
+                    font-family: I4;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+.empty{
+    margin: 50px 0 20px;
+    font-family: I5;
+    font-size: 200px;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    @include media (760){
+        font-size: 170px;
+    }
+    @include media (600){
+        font-size: 100px !important;
+    }
+}
+.btn-holder{
+    display: flex;
+    gap: 10px;
+    button{
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: 1px solid black;
+        font-size: 20px;
+        font-family: I5;
+    }
+}
+.card-holder-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-holder-fix{
+    background: white;
+    border: 1px solid black;    
+    height: max-content;
+    padding: 20px 30px;
+    font-size: 50px;
+    @include media (960){
+        border-radius: 10px;
+        position: fixed;
+        bottom: 10px;
+        font-size: 20px;
+        right: 10px;
+        button{
+            color: #000;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
