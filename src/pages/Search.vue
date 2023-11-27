@@ -24,7 +24,7 @@
     const storeSearch = ref(null)
     const see = storeSearch.value
     const search = useSearch()
-    const query = ''
+    let query = ''
     const input = async(queryy) => {
         await search.getSearch(query)
         storeSearch.value = search.search
