@@ -21,8 +21,8 @@
     // import {useItem} from '@/store/item'
     // const items = useItem()
     // const storeItems = ref(null)
-    const storeSearch = ref(null)
-    const see = storeSearch.value
+    let storeSearch = ref(null);
+    const see = storeSearch.value;
     const search = useSearch()
     let query = ''
     const input = async(queryy) => {
