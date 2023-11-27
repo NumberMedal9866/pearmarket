@@ -1,6 +1,6 @@
 <template>
     <div class="container col">
-        <input type="text" @input="input(query)" v-model="query" placeholder="Search">
+        <input type="text" @input="input(queryy)" v-model="query" placeholder="Search">
         <div class="card-holder" v-if="storeSearch">
             <Card 
                 :storeProducts="storeSearch"
@@ -25,11 +25,11 @@
     const see = storeSearch.value
     const search = useSearch()
     const query = ''
-    const input = async(query) => {
+    const input = async(queryy) => {
         await search.getSearch(query)
         storeSearch.value = search.search
         console.log(storeSearch.value);
-        if (query=='') storeSearch.value=null
+        if (queryy=='') storeSearch.value=null
     }
     // const calculateDiscountedPrice = (price, discountPercentage) => {
     //   const discountAmount = (price * discountPercentage) / 100;
