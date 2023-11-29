@@ -95,7 +95,7 @@
         }else if (val == 'high') {
             storeItems.value.sort((a, b) => b.price - a.price);
         }else if (val == 'check') {
-            storeItems.value.sort((a, b) => a.stock - b.stock);
+            storeItems.value.sort((a, b) => b.stock - a.stock);
         }else{
             // window.location.reload()
             def()
